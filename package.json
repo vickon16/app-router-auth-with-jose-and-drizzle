@@ -1,0 +1,31 @@
+{
+  "name": "app-router-auth-with-jose-and-drizzle",
+  "version": "0.1.0",
+  "private": true,
+  "type" : "module",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "generate": "drizzle-kit generate:mysql",
+    "lint": "next lint",
+    "prettier": "prettier --write --ignore-unknown .",
+    "push": "drizzle-kit push:mysql",
+    "seed": "npx tsx drizzle/seed.ts",
+    "start": "next start"
+  },
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.2.4"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.4"
+  }
+}
